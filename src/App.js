@@ -1,15 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import expenses from './TestData/ExpensesData';
 import ExpensesHolder from './components/Expenses/ExpensesHolder';
+import NewExpenseItem from './components/NewExpenseEntry/NewExpenseItem';
 
 
 const App = () => {
 
+  const [expensesData, setExpensesData] = useState(expenses);
+
+  const addExpenseDataHandler = (addedExpenseEntry) => {
+    setExpensesData((prevState) => {
+      const newExpensesData = [...prevState];
+      newExpensesData.push(addedExpenseEntry);
+      return newExpensesData;
+    });
+  };
+
   return React.createElement(
     'div', 
     {}, 
-    React.createElement('h1', {}, 'We are just getting started!'),
-    React.createElement(ExpensesHolder, { expenseObjects: expenses }),
+    React.createElement(NewExpenseItem, { onAddedExpenseEntry: addExpenseDataHandler}),
+    React.createElement(ExpensesHolder, { expenseObjects: expensesData }),
   );
   
   // return (
