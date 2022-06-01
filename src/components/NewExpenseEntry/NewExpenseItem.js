@@ -1,5 +1,5 @@
 import React from 'react';
-import ExpenseForm from './ExpenseForm';
+import NewExpenseOption from './NewExpenseOption';
 import './NewExpenseItem.css';
 
 const NewExpenseItem = (props) => {
@@ -15,7 +15,7 @@ const NewExpenseItem = (props) => {
 
     return (
         <div className='new-expense'>
-            <ExpenseForm onAddedExpenseEntry={addExpenseDataHandler}/>
+            <NewExpenseOption onAddedExpenseEntry={addExpenseDataHandler} />
         </div>
     );
 }
