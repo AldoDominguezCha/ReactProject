@@ -10,9 +10,7 @@ const App = () => {
 
   const addExpenseDataHandler = (addedExpenseEntry) => {
     setExpensesData((prevState) => {
-      const newExpensesData = [...prevState];
-      newExpensesData.push(addedExpenseEntry);
-      return newExpensesData;
+      return [...prevState, addedExpenseEntry];
     });
   };
 

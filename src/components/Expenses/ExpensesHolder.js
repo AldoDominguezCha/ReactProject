@@ -1,32 +1,33 @@
 import React, {useState} from 'react';
 import './ExpensesHolder.css';
 import Card from './../UI/Card';
-import ExpenseItem from './ExpenseItem';
 import ExpenseFilter from './ExpensesFilter';
+import ExpensesList from './ExpensesList';
 
 function ExpensesHolder(props) {
 
-    const [yearFilter, setYearFilter] = useState('2022');
-
-    console.log('Year to filter: ' + yearFilter);
+    const [yearFilter, setYearFilter] = useState('2019');
     
-    const dateFilterChangeHandler = (newYear) => {
+    const dateFilterChangeHandler = newYear => {
         setYearFilter(newYear);
     };
 
-    const expenseElements = [];
+    
     const filteredExpenseObjects = props.expenseObjects.filter(expense => expense.date.getFullYear() === parseInt(yearFilter));
-    filteredExpenseObjects.forEach(expense => {
-        expenseElements.push(
-            <ExpenseItem expenseObject={expense} key={expense.id}/>
-        );
-    });
+    
+    
+    //const expenseElements = [];
+    // filteredExpenseObjects.forEach(expense => {
+    //     expenseElements.push(
+    //         <ExpenseItem expenseObject={expense} key={expense.id}/>
+    //     );
+    // });
 
     return(
         <div>
-            <ExpenseFilter onDateFilterChange={dateFilterChangeHandler}/>
             <Card className="expenses">
-                {expenseElements}
+            <ExpenseFilter selected={yearFilter} onDateFilterChange={dateFilterChangeHandler}/>
+            <ExpensesList expenses={filteredExpenseObjects}/>
             </Card>
         </div>
     );
