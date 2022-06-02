@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100;1,700;1,900&display=swap');
+
+.users-list-container {
+    background-color: white;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.user-list-main-container {
+    background-color: white;
+    width: 50%;
+    position: relative;
+    margin: auto;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.user-list-title {
+    flex: 10;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    position: relative;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.name-header {
+    flex-grow: 3;
+    padding-left: 5%;
+}
+
+.age-header {
+    flex-grow: 1;
+    padding-left: 80%;
+}

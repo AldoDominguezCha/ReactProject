@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
+
+.main-container {
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: auto;
+    margin: 10px;
+    padding: 1%;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.name-subcontainer {
+    flex-grow: 3;
+    padding-left: 5%;
+    
+}
+
+.age-subcontainer {
+    flex-grow: 1;
+}
