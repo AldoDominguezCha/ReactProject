@@ -15,7 +15,7 @@ const UsersList = props => {
                 </div>
             </div>
             <ul className={styles['users-list-container']}>
-                {props.users.map(user => <UserItem name={user.name} age={user.age}/>)}
+                {props.users.map(user => <UserItem name={user.name} age={user.age} key={user.id}/>)}
             </ul>
         </div>
     );

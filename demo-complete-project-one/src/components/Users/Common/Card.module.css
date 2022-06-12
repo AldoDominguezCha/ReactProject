@@ -1,0 +1,11 @@
+.card-container {
+    background-color: white;
+    width: 50%;
+    position: relative;
+    margin: auto;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 15px;
+}
