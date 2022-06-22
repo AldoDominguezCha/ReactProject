@@ -45,3 +45,11 @@
     background-color: #8a2b06;
     color: white;
 }
+
+.centered-message {
+    text-align: center;
+}
+
+.error-text {
+    color: red;
+}

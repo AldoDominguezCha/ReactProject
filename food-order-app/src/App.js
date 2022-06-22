@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 import Meals from './components/Meals/Meals';
 import Header from "./components/Layout/Header";
@@ -12,6 +12,10 @@ function App() {
   const cartStateChangeHandler = isCarDisplayed => {
     setCarDisplayedState(isCarDisplayed);
   };
+
+  useEffect(() => {
+
+  }, [])
 
   return (
     <CartProvider>

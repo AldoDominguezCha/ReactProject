@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Pork sausage meat and truffle salad",
+    "description": "A crunchy salad featuring pork sausage meat and truffle",
+    "price": 12.35
+  },
+  {
+    "id": 2,
+    "name": "Raisin and courgette muffins",
+    "description": "Rich muffins made with fresh raisin and courgette",
+    "price": 5.85
+  },
+  {
+    "id": 3,
+    "name": "Chickpea and banana curry",
+    "description": "Mild curry made with fresh chickpea and banana",
+    "price": 6.40
+  },
+  {
+    "id": 4,
+    "name": "Blackberry and vanilla jam",
+    "description": "A rich jam made from fresh blackberry and vanilla",
+    "price": 3.25
+  },
+  {
+    "id": 5,
+    "name": "Rosemary and salmon parcels",
+    "description": "Thin filo pastry cases stuffed with dried rosemary and smoked salmon",
+    "price": 15.70
+  },
+  {
+    "id": 6,
+    "name": "Soya and boysenberry salad",
+    "description": "Soya and fresh boysenberry served on a bed of lettuce",
+    "price": 5.40
+  },
+  {
+    "id": 7,
+    "name": "Steak and rabbit soup",
+    "description": "Steak and rabbit combined into creamy soup",
+    "price": 21.45
+  },
+  {
+    "id": 8,
+    "name": "Cardamom and mushroom vindaloo",
+    "description": "Spicy vindaloo made with green cardamom and chestnut mushroom",
+    "price": 14.60
+  }
+]
